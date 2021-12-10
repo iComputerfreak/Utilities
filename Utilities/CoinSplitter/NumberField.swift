@@ -11,48 +11,36 @@ import Combine
 
 struct NumberField: View {
     
-    let numberFormatter: NumberFormatter = {
-        let f = NumberFormatter()
-        return f
-    }()
-    
     let name: String
     let abbreviation: String
     @Binding var amount: Int
-    @State private var text: String
-    @State private var publisher: AnyCancellable?
-    
-    init(name: String, abbreviation: String, amount: Binding<Int>) {
-        self.name = name
-        self.abbreviation = abbreviation
-        self._amount = amount
-        self._text = State(initialValue: amount.wrappedValue == 0 ? "" : "\(amount.wrappedValue)")
-    }
     
     var body: some View {
         HStack {
-            Text("\(name):")
+            Text(name)
                 .font(.title)
             Spacer()
-            TextField(abbreviation, text: $text, onEditingChanged: { (startedEditing: Bool) in
-                print("Editing \(text)")
-                
-            })
+            TextField(name, value: $amount, format: .number , prompt: Text(abbreviation))
+                .multilineTextAlignment(.trailing)
                 .font(.title)
                 .keyboardType(.numberPad)
-                .frame(maxWidth: 100)
-                .multilineTextAlignment(.trailing)
-                .background(
-                    Color.init(white: 0.9)
-                        .cornerRadius(5)
-                )
-            .onChange(of: text, perform: { value in
-                // Write the amount as int
-                self.amount = Int(truncating: numberFormatter.number(from: text) ?? 0)
-            })
-            Text("\(abbreviation)")
-                .font(.title)
+            HStack {
+                Text(abbreviation)
+                    .font(.title)
+                Spacer()
+            }
+                .frame(width: 40)
         }
     }
-    
+}
+
+struct NumberField_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack {
+            NumberField(name: "Copper", abbreviation: "cp", amount: .constant(10))
+            NumberField(name: "Copper", abbreviation: "cp", amount: .constant(-1))
+            NumberField(name: "Copper", abbreviation: "cp", amount: .constant(0))
+        }
+        .previewLayout(.sizeThatFits)
+    }
 }

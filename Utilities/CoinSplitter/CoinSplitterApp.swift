@@ -16,6 +16,7 @@ struct CoinSplitterApp: View {
     @State private var gp: Int = 0
     @State private var pp: Int = 0
     @State private var partySize: Int = 5
+    
     private var result: String {
         let totalCopper = pp * 1000 + gp * 100 + ep * 50 + sp * 10 + cp
         // Divide by party size
@@ -36,7 +37,6 @@ struct CoinSplitterApp: View {
     var body: some View {
         NavigationView {
             Form {
-                //TextField.init("Copper", value: $test, format: nil, prompt: Text("Prompt"))
                 NumberField(name: "Copper", abbreviation: "cp", amount: $cp)
                     .padding(.vertical, 5)
                 NumberField(name: "Silver", abbreviation: "sp", amount: $sp)
@@ -56,7 +56,6 @@ struct CoinSplitterApp: View {
                         .padding(.vertical)
                 }
             }
-            .padding(.horizontal)
             .navigationTitle("Coin Splitter")
         }
     }
@@ -67,13 +66,3 @@ struct CoinSplitterApp_Previews: PreviewProvider {
         CoinSplitterApp()
     }
 }
-
-//struct TestFormat: ParseableFormatStyle {
-//
-//    typealias Strategy = IntegerParseStrategy
-//
-//    var parseStrategy: Self.Strategy {
-//        return IntegerParseStrategy()
-//    }
-//
-//}

@@ -16,23 +16,13 @@ struct TrainTimeApp: View {
         return f
     }()
     
-    @State private var departure = Date() {
-        didSet { print("Calculating times from didSet"); calculateTimes() }
-    }
+    @State private var departure = Date()
     
     // MARK: Persistent Data
-    @AppStorage(.walkTimeMetro) private var walkTimeMetro = 0 {
-        didSet { print("Calculating times from didSet"); calculateTimes() }
-    }
-    @AppStorage(.departureMetro) private var departureMetro = 0 {
-        didSet { print("Calculating times from didSet"); calculateTimes() }
-    }
-    @AppStorage(.metroTripDuration) private var metroTripDuration = 0 {
-        didSet { print("Calculating times from didSet"); calculateTimes() }
-    }
-    @AppStorage(.walkTimeTrain) private var walkTimeTrain = 0 {
-        didSet { print("Calculating times from didSet"); calculateTimes() }
-    }
+    @AppStorage(.walkTimeMetro) private var walkTimeMetro = 0
+    @AppStorage(.departureMetro) private var departureMetro = 0
+    @AppStorage(.metroTripDuration) private var metroTripDuration = 0
+    @AppStorage(.walkTimeTrain) private var walkTimeTrain = 0
     
     private var leaveHouseTime: Date {
         reachMetroTime.addingTimeInterval(.init(-60 * walkTimeMetro))

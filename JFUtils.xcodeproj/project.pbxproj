@@ -13,7 +13,16 @@
 		AB80F3432763899B00139D9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB80F3422763899B00139D9B /* Preview Assets.xcassets */; };
 		AB80F34B27638A9D00139D9B /* JFUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F34A27638A9D00139D9B /* JFUtils.swift */; };
 		AB80F34D27638AAE00139D9B /* TrainTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F34C27638AAE00139D9B /* TrainTimeUtils.swift */; };
-		AB80F34F27638AC800139D9B /* TrainTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F34E27638AC800139D9B /* TrainTimeView.swift */; };
+		AB80F34F27638AC800139D9B /* TrainTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F34E27638AC800139D9B /* TrainTimeApp.swift */; };
+		AB80F35927638CCC00139D9B /* KeyPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F35227638CCB00139D9B /* KeyPin.swift */; };
+		AB80F35A27638CCC00139D9B /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F35327638CCC00139D9B /* Lock.swift */; };
+		AB80F35B27638CCC00139D9B /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F35427638CCC00139D9B /* Pin.swift */; };
+		AB80F35C27638CCC00139D9B /* LockConfiguratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F35527638CCC00139D9B /* LockConfiguratorApp.swift */; };
+		AB80F35D27638CCC00139D9B /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F35627638CCC00139D9B /* PinView.swift */; };
+		AB80F35E27638CCC00139D9B /* DriverPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F35727638CCC00139D9B /* DriverPin.swift */; };
+		AB80F36027638CFF00139D9B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F35F27638CFF00139D9B /* Extensions.swift */; };
+		AB80F36327638DCD00139D9B /* CoinSplitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F36227638DCD00139D9B /* CoinSplitterApp.swift */; };
+		AB80F36527638E4F00139D9B /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F36427638E4F00139D9B /* Coins.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +33,16 @@
 		AB80F3422763899B00139D9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB80F34A27638A9D00139D9B /* JFUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFUtils.swift; sourceTree = "<group>"; };
 		AB80F34C27638AAE00139D9B /* TrainTimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTimeUtils.swift; sourceTree = "<group>"; };
-		AB80F34E27638AC800139D9B /* TrainTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTimeView.swift; sourceTree = "<group>"; };
+		AB80F34E27638AC800139D9B /* TrainTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTimeApp.swift; sourceTree = "<group>"; };
+		AB80F35227638CCB00139D9B /* KeyPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPin.swift; sourceTree = "<group>"; };
+		AB80F35327638CCC00139D9B /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		AB80F35427638CCC00139D9B /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		AB80F35527638CCC00139D9B /* LockConfiguratorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockConfiguratorApp.swift; sourceTree = "<group>"; };
+		AB80F35627638CCC00139D9B /* PinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		AB80F35727638CCC00139D9B /* DriverPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverPin.swift; sourceTree = "<group>"; };
+		AB80F35F27638CFF00139D9B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AB80F36227638DCD00139D9B /* CoinSplitterApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinSplitterApp.swift; sourceTree = "<group>"; };
+		AB80F36427638E4F00139D9B /* Coins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,9 @@
 				AB80F33B2763899600139D9B /* JFUtilsApp.swift */,
 				AB80F33D2763899600139D9B /* ContentView.swift */,
 				AB80F34A27638A9D00139D9B /* JFUtils.swift */,
+				AB80F35F27638CFF00139D9B /* Extensions.swift */,
+				AB80F36127638DC200139D9B /* CoinSplitter */,
+				AB80F35027638C4B00139D9B /* LockConfigurator */,
 				AB80F349276389B600139D9B /* TrainTime */,
 				AB80F33F2763899B00139D9B /* Assets.xcassets */,
 				AB80F3412763899B00139D9B /* Preview Content */,
@@ -79,9 +100,31 @@
 			isa = PBXGroup;
 			children = (
 				AB80F34C27638AAE00139D9B /* TrainTimeUtils.swift */,
-				AB80F34E27638AC800139D9B /* TrainTimeView.swift */,
+				AB80F34E27638AC800139D9B /* TrainTimeApp.swift */,
 			);
 			path = TrainTime;
+			sourceTree = "<group>";
+		};
+		AB80F35027638C4B00139D9B /* LockConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				AB80F35527638CCC00139D9B /* LockConfiguratorApp.swift */,
+				AB80F35727638CCC00139D9B /* DriverPin.swift */,
+				AB80F35227638CCB00139D9B /* KeyPin.swift */,
+				AB80F35327638CCC00139D9B /* Lock.swift */,
+				AB80F35427638CCC00139D9B /* Pin.swift */,
+				AB80F35627638CCC00139D9B /* PinView.swift */,
+			);
+			path = LockConfigurator;
+			sourceTree = "<group>";
+		};
+		AB80F36127638DC200139D9B /* CoinSplitter */ = {
+			isa = PBXGroup;
+			children = (
+				AB80F36227638DCD00139D9B /* CoinSplitterApp.swift */,
+				AB80F36427638E4F00139D9B /* Coins.swift */,
+			);
+			path = CoinSplitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,10 +198,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB80F33E2763899600139D9B /* ContentView.swift in Sources */,
-				AB80F34F27638AC800139D9B /* TrainTimeView.swift in Sources */,
+				AB80F35E27638CCC00139D9B /* DriverPin.swift in Sources */,
+				AB80F34F27638AC800139D9B /* TrainTimeApp.swift in Sources */,
+				AB80F35927638CCC00139D9B /* KeyPin.swift in Sources */,
+				AB80F35B27638CCC00139D9B /* Pin.swift in Sources */,
 				AB80F34D27638AAE00139D9B /* TrainTimeUtils.swift in Sources */,
 				AB80F33C2763899600139D9B /* JFUtilsApp.swift in Sources */,
+				AB80F36027638CFF00139D9B /* Extensions.swift in Sources */,
+				AB80F35C27638CCC00139D9B /* LockConfiguratorApp.swift in Sources */,
 				AB80F34B27638A9D00139D9B /* JFUtils.swift in Sources */,
+				AB80F36527638E4F00139D9B /* Coins.swift in Sources */,
+				AB80F36327638DCD00139D9B /* CoinSplitterApp.swift in Sources */,
+				AB80F35D27638CCC00139D9B /* PinView.swift in Sources */,
+				AB80F35A27638CCC00139D9B /* Lock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

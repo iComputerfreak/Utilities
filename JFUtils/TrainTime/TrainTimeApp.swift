@@ -1,5 +1,5 @@
 //
-//  TrainTimeView.swift
+//  TrainTimeApp.swift
 //  TrainTime
 //
 //  Created by Jonas Frey on 09.12.21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TrainTimeView: View {
+struct TrainTimeApp: View {
     
     let formatter: DateFormatter = {
         let f = DateFormatter()
@@ -146,13 +146,13 @@ struct TrainTimeView: View {
                 }
                 .padding()
             }
-            .navigationTitle("TrainTime")
+            .navigationTitle("Train Time")
         }
         .onAppear(perform: onAppear)
     }
 }
 
-struct TrainTimeView_Previews: PreviewProvider {
+struct TrainTimeApp_Previews: PreviewProvider {
     
     static var previewStorage: UserDefaults {
         let u = UserDefaults()
@@ -164,7 +164,7 @@ struct TrainTimeView_Previews: PreviewProvider {
     }
     
     static var previews: some View {
-        TrainTimeView()
+        TrainTimeApp()
             .defaultAppStorage(previewStorage)
     }
 }

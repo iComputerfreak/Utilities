@@ -10,10 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            TrainTimeView()
+            TrainTimeApp()
                 .tabItem {
                     Image(systemName: "train.side.front.car")
                     Text("TrainTime")
+                }
+            
+            LockConfiguratorApp()
+                .tabItem {
+                    Image(systemName: "lock.fill")
+                    Text("LockConfigurator")
+                }
+            
+            CoinSplitterApp()
+                .tabItem {
+                    Image(systemName: "circlebadge.2.fill")
+                    Text("CoinSplitter")
                 }
         }
     }

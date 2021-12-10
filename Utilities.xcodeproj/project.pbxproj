@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB80F33C2763899600139D9B /* JFUtilsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F33B2763899600139D9B /* JFUtilsApp.swift */; };
+		AB80F33C2763899600139D9B /* UtilitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F33B2763899600139D9B /* UtilitiesApp.swift */; };
 		AB80F33E2763899600139D9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F33D2763899600139D9B /* ContentView.swift */; };
 		AB80F3402763899B00139D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB80F33F2763899B00139D9B /* Assets.xcassets */; };
 		AB80F3432763899B00139D9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB80F3422763899B00139D9B /* Preview Assets.xcassets */; };
@@ -23,11 +23,14 @@
 		AB80F36027638CFF00139D9B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F35F27638CFF00139D9B /* Extensions.swift */; };
 		AB80F36327638DCD00139D9B /* CoinSplitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F36227638DCD00139D9B /* CoinSplitterApp.swift */; };
 		AB80F36527638E4F00139D9B /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F36427638E4F00139D9B /* Coins.swift */; };
+		AB80F36727638F3400139D9B /* NumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F36627638F3400139D9B /* NumberField.swift */; };
+		AB80F3692763914F00139D9B /* NumberProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F3682763914F00139D9B /* NumberProxy.swift */; };
+		AB9E91D82763F73900C02821 /* JFUtils in Frameworks */ = {isa = PBXBuildFile; productRef = AB9E91D72763F73900C02821 /* JFUtils */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB80F3382763899600139D9B /* JFUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB80F33B2763899600139D9B /* JFUtilsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFUtilsApp.swift; sourceTree = "<group>"; };
+		AB80F3382763899600139D9B /* Utilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB80F33B2763899600139D9B /* UtilitiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesApp.swift; sourceTree = "<group>"; };
 		AB80F33D2763899600139D9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB80F33F2763899B00139D9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB80F3422763899B00139D9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -43,6 +46,9 @@
 		AB80F35F27638CFF00139D9B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AB80F36227638DCD00139D9B /* CoinSplitterApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinSplitterApp.swift; sourceTree = "<group>"; };
 		AB80F36427638E4F00139D9B /* Coins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
+		AB80F36627638F3400139D9B /* NumberField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberField.swift; sourceTree = "<group>"; };
+		AB80F3682763914F00139D9B /* NumberProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberProxy.swift; sourceTree = "<group>"; };
+		AB9E91D52763F71200C02821 /* JFUtils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = JFUtils; path = ../../../Libraries/JFUtils; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,32 +56,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9E91D82763F73900C02821 /* JFUtils in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB56ED862763F4D500DF73AB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				AB9E91D52763F71200C02821 /* JFUtils */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		AB80F32F2763899600139D9B = {
 			isa = PBXGroup;
 			children = (
-				AB80F33A2763899600139D9B /* JFUtils */,
+				AB56ED862763F4D500DF73AB /* Packages */,
+				AB80F33A2763899600139D9B /* Utilities */,
 				AB80F3392763899600139D9B /* Products */,
+				AB9E91D62763F73900C02821 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		AB80F3392763899600139D9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB80F3382763899600139D9B /* JFUtils.app */,
+				AB80F3382763899600139D9B /* Utilities.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB80F33A2763899600139D9B /* JFUtils */ = {
+		AB80F33A2763899600139D9B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				AB80F33B2763899600139D9B /* JFUtilsApp.swift */,
+				AB80F33B2763899600139D9B /* UtilitiesApp.swift */,
 				AB80F33D2763899600139D9B /* ContentView.swift */,
 				AB80F34A27638A9D00139D9B /* JFUtils.swift */,
 				AB80F35F27638CFF00139D9B /* Extensions.swift */,
@@ -85,7 +102,7 @@
 				AB80F33F2763899B00139D9B /* Assets.xcassets */,
 				AB80F3412763899B00139D9B /* Preview Content */,
 			);
-			path = JFUtils;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		AB80F3412763899B00139D9B /* Preview Content */ = {
@@ -123,16 +140,25 @@
 			children = (
 				AB80F36227638DCD00139D9B /* CoinSplitterApp.swift */,
 				AB80F36427638E4F00139D9B /* Coins.swift */,
+				AB80F36627638F3400139D9B /* NumberField.swift */,
+				AB80F3682763914F00139D9B /* NumberProxy.swift */,
 			);
 			path = CoinSplitter;
+			sourceTree = "<group>";
+		};
+		AB9E91D62763F73900C02821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB80F3372763899600139D9B /* JFUtils */ = {
+		AB80F3372763899600139D9B /* Utilities */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB80F3462763899B00139D9B /* Build configuration list for PBXNativeTarget "JFUtils" */;
+			buildConfigurationList = AB80F3462763899B00139D9B /* Build configuration list for PBXNativeTarget "Utilities" */;
 			buildPhases = (
 				AB80F3342763899600139D9B /* Sources */,
 				AB80F3352763899600139D9B /* Frameworks */,
@@ -142,9 +168,12 @@
 			);
 			dependencies = (
 			);
-			name = JFUtils;
+			name = Utilities;
+			packageProductDependencies = (
+				AB9E91D72763F73900C02821 /* JFUtils */,
+			);
 			productName = JFUtils;
-			productReference = AB80F3382763899600139D9B /* JFUtils.app */;
+			productReference = AB80F3382763899600139D9B /* Utilities.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +191,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AB80F3332763899600139D9B /* Build configuration list for PBXProject "JFUtils" */;
+			buildConfigurationList = AB80F3332763899600139D9B /* Build configuration list for PBXProject "Utilities" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -175,7 +204,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB80F3372763899600139D9B /* JFUtils */,
+				AB80F3372763899600139D9B /* Utilities */,
 			);
 		};
 /* End PBXProject section */
@@ -202,8 +231,10 @@
 				AB80F34F27638AC800139D9B /* TrainTimeApp.swift in Sources */,
 				AB80F35927638CCC00139D9B /* KeyPin.swift in Sources */,
 				AB80F35B27638CCC00139D9B /* Pin.swift in Sources */,
+				AB80F36727638F3400139D9B /* NumberField.swift in Sources */,
 				AB80F34D27638AAE00139D9B /* TrainTimeUtils.swift in Sources */,
-				AB80F33C2763899600139D9B /* JFUtilsApp.swift in Sources */,
+				AB80F3692763914F00139D9B /* NumberProxy.swift in Sources */,
+				AB80F33C2763899600139D9B /* UtilitiesApp.swift in Sources */,
 				AB80F36027638CFF00139D9B /* Extensions.swift in Sources */,
 				AB80F35C27638CCC00139D9B /* LockConfiguratorApp.swift in Sources */,
 				AB80F34B27638A9D00139D9B /* JFUtils.swift in Sources */,
@@ -340,7 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JFUtils/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Utilities/Preview Content\"";
 				DEVELOPMENT_TEAM = 46C9Y785NA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -354,8 +385,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.JonasFrey.JFUtils;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.JonasFrey.Utilities;
+				PRODUCT_NAME = Utilities;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -369,7 +400,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JFUtils/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Utilities/Preview Content\"";
 				DEVELOPMENT_TEAM = 46C9Y785NA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -383,8 +414,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.JonasFrey.JFUtils;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.JonasFrey.Utilities;
+				PRODUCT_NAME = Utilities;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -394,7 +425,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB80F3332763899600139D9B /* Build configuration list for PBXProject "JFUtils" */ = {
+		AB80F3332763899600139D9B /* Build configuration list for PBXProject "Utilities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB80F3442763899B00139D9B /* Debug */,
@@ -403,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB80F3462763899B00139D9B /* Build configuration list for PBXNativeTarget "JFUtils" */ = {
+		AB80F3462763899B00139D9B /* Build configuration list for PBXNativeTarget "Utilities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB80F3472763899B00139D9B /* Debug */,
@@ -413,6 +444,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB9E91D72763F73900C02821 /* JFUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = JFUtils;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB80F3302763899600139D9B /* Project object */;
 }

@@ -11,7 +11,6 @@
 		AB80F33E2763899600139D9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F33D2763899600139D9B /* ContentView.swift */; };
 		AB80F3402763899B00139D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB80F33F2763899B00139D9B /* Assets.xcassets */; };
 		AB80F3432763899B00139D9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB80F3422763899B00139D9B /* Preview Assets.xcassets */; };
-		AB80F34B27638A9D00139D9B /* JFUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F34A27638A9D00139D9B /* JFUtils.swift */; };
 		AB80F34D27638AAE00139D9B /* TrainTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F34C27638AAE00139D9B /* TrainTimeUtils.swift */; };
 		AB80F34F27638AC800139D9B /* TrainTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F34E27638AC800139D9B /* TrainTimeApp.swift */; };
 		AB80F35927638CCC00139D9B /* KeyPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F35227638CCB00139D9B /* KeyPin.swift */; };
@@ -24,7 +23,6 @@
 		AB80F36327638DCD00139D9B /* CoinSplitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F36227638DCD00139D9B /* CoinSplitterApp.swift */; };
 		AB80F36527638E4F00139D9B /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F36427638E4F00139D9B /* Coins.swift */; };
 		AB80F36727638F3400139D9B /* NumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F36627638F3400139D9B /* NumberField.swift */; };
-		AB80F3692763914F00139D9B /* NumberProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F3682763914F00139D9B /* NumberProxy.swift */; };
 		AB9E91D82763F73900C02821 /* JFUtils in Frameworks */ = {isa = PBXBuildFile; productRef = AB9E91D72763F73900C02821 /* JFUtils */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +32,6 @@
 		AB80F33D2763899600139D9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB80F33F2763899B00139D9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB80F3422763899B00139D9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AB80F34A27638A9D00139D9B /* JFUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFUtils.swift; sourceTree = "<group>"; };
 		AB80F34C27638AAE00139D9B /* TrainTimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTimeUtils.swift; sourceTree = "<group>"; };
 		AB80F34E27638AC800139D9B /* TrainTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTimeApp.swift; sourceTree = "<group>"; };
 		AB80F35227638CCB00139D9B /* KeyPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPin.swift; sourceTree = "<group>"; };
@@ -47,7 +44,6 @@
 		AB80F36227638DCD00139D9B /* CoinSplitterApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinSplitterApp.swift; sourceTree = "<group>"; };
 		AB80F36427638E4F00139D9B /* Coins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
 		AB80F36627638F3400139D9B /* NumberField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberField.swift; sourceTree = "<group>"; };
-		AB80F3682763914F00139D9B /* NumberProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberProxy.swift; sourceTree = "<group>"; };
 		AB9E91D52763F71200C02821 /* JFUtils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = JFUtils; path = ../../../Libraries/JFUtils; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +90,6 @@
 			children = (
 				AB80F33B2763899600139D9B /* UtilitiesApp.swift */,
 				AB80F33D2763899600139D9B /* ContentView.swift */,
-				AB80F34A27638A9D00139D9B /* JFUtils.swift */,
 				AB80F35F27638CFF00139D9B /* Extensions.swift */,
 				AB80F36127638DC200139D9B /* CoinSplitter */,
 				AB80F35027638C4B00139D9B /* LockConfigurator */,
@@ -141,7 +136,6 @@
 				AB80F36227638DCD00139D9B /* CoinSplitterApp.swift */,
 				AB80F36427638E4F00139D9B /* Coins.swift */,
 				AB80F36627638F3400139D9B /* NumberField.swift */,
-				AB80F3682763914F00139D9B /* NumberProxy.swift */,
 			);
 			path = CoinSplitter;
 			sourceTree = "<group>";
@@ -233,11 +227,9 @@
 				AB80F35B27638CCC00139D9B /* Pin.swift in Sources */,
 				AB80F36727638F3400139D9B /* NumberField.swift in Sources */,
 				AB80F34D27638AAE00139D9B /* TrainTimeUtils.swift in Sources */,
-				AB80F3692763914F00139D9B /* NumberProxy.swift in Sources */,
 				AB80F33C2763899600139D9B /* UtilitiesApp.swift in Sources */,
 				AB80F36027638CFF00139D9B /* Extensions.swift in Sources */,
 				AB80F35C27638CCC00139D9B /* LockConfiguratorApp.swift in Sources */,
-				AB80F34B27638A9D00139D9B /* JFUtils.swift in Sources */,
 				AB80F36527638E4F00139D9B /* Coins.swift in Sources */,
 				AB80F36327638DCD00139D9B /* CoinSplitterApp.swift in Sources */,
 				AB80F35D27638CCC00139D9B /* PinView.swift in Sources */,

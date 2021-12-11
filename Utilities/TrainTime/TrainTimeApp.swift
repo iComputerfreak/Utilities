@@ -39,7 +39,6 @@ struct TrainTimeApp: View {
     }
     
     private func calculateTimes() {
-        print("Calculating times")
         // Try to arrive exactly at the requested arrival time
         // i.e. the latest departure we could take
         var time = departure.addingTimeInterval(.init(-60 * (walkTimeTrain + metroTripDuration)))
@@ -59,15 +58,12 @@ struct TrainTimeApp: View {
             // since `time` is already the latest metro departure we can afford
             let diff = departureMetro - mins % 10
             time = time.addingTimeInterval(.init(60 * (diff - 10)))
-        } else {
-            print("Time matches")
         }
         
         departureMetroTime = time
     }
     
     private func valueChanged(_ value: Any) {
-        print("Calculating times from value changed")
         calculateTimes()
     }
     

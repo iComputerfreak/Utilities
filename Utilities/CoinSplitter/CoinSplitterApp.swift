@@ -10,12 +10,23 @@ import Combine
 
 struct CoinSplitterApp: View {
     
+    enum FocusableField: Hashable {
+        case copper
+        case silver
+        case electrum
+        case gold
+        case platinum
+        case partySize
+    }
+    
     @State private var cp: Int = 0
     @State private var sp: Int = 0
     @State private var ep: Int = 0
     @State private var gp: Int = 0
     @State private var pp: Int = 0
     @State private var partySize: Int = 5
+    
+    @FocusState private var focusedField: FocusableField?
     
     private var result: String {
         let totalCopper = pp * 1000 + gp * 100 + ep * 50 + sp * 10 + cp
@@ -31,23 +42,27 @@ struct CoinSplitterApp: View {
         }
         return r
     }
-    
-    @State private var test: Int = 0
-    
+        
     var body: some View {
         NavigationView {
             Form {
                 NumberField(name: "Copper", abbreviation: "cp", amount: $cp)
+                    .focused($focusedField, equals: .copper)
                     .padding(.vertical, 5)
                 NumberField(name: "Silver", abbreviation: "sp", amount: $sp)
+                    .focused($focusedField, equals: .silver)
                     .padding(.vertical, 5)
                 NumberField(name: "Electrum", abbreviation: "ep", amount: $ep)
+                    .focused($focusedField, equals: .electrum)
                     .padding(.vertical, 5)
                 NumberField(name: "Gold", abbreviation: "gp", amount: $gp)
+                    .focused($focusedField, equals: .gold)
                     .padding(.vertical, 5)
                 NumberField(name: "Platinum", abbreviation: "pp", amount: $pp)
+                    .focused($focusedField, equals: .platinum)
                     .padding(.vertical, 5)
                 NumberField(name: "Party Size", abbreviation: "", amount: $partySize)
+                    .focused($focusedField, equals: .partySize)
                     .padding(.vertical, 5)
                 
                 Section {
@@ -57,6 +72,18 @@ struct CoinSplitterApp: View {
                 }
             }
             .navigationTitle("Coin Splitter")
+            .toolbar {
+                ToolbarItem(placement: .keyboard) {
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            focusedField = nil
+                        }, label: {
+                            Text("Done").bold()
+                        })
+                    }
+                }
+            }
         }
     }
 }

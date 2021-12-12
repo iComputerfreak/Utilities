@@ -23,7 +23,7 @@
 		AB80F36327638DCD00139D9B /* CoinSplitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F36227638DCD00139D9B /* CoinSplitterApp.swift */; };
 		AB80F36527638E4F00139D9B /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F36427638E4F00139D9B /* Coins.swift */; };
 		AB80F36727638F3400139D9B /* NumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80F36627638F3400139D9B /* NumberField.swift */; };
-		AB9E91D82763F73900C02821 /* JFUtils in Frameworks */ = {isa = PBXBuildFile; productRef = AB9E91D72763F73900C02821 /* JFUtils */; };
+		ABAD7033276630BC00F49854 /* JFUtils in Frameworks */ = {isa = PBXBuildFile; productRef = ABAD7032276630BC00F49854 /* JFUtils */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,6 @@
 		AB80F36227638DCD00139D9B /* CoinSplitterApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinSplitterApp.swift; sourceTree = "<group>"; };
 		AB80F36427638E4F00139D9B /* Coins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
 		AB80F36627638F3400139D9B /* NumberField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberField.swift; sourceTree = "<group>"; };
-		AB9E91D52763F71200C02821 /* JFUtils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = JFUtils; path = ../../../Libraries/JFUtils; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,25 +51,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9E91D82763F73900C02821 /* JFUtils in Frameworks */,
+				ABAD7033276630BC00F49854 /* JFUtils in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AB56ED862763F4D500DF73AB /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				AB9E91D52763F71200C02821 /* JFUtils */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		AB80F32F2763899600139D9B = {
 			isa = PBXGroup;
 			children = (
-				AB56ED862763F4D500DF73AB /* Packages */,
 				AB80F33A2763899600139D9B /* Utilities */,
 				AB80F3392763899600139D9B /* Products */,
 				AB9E91D62763F73900C02821 /* Frameworks */,
@@ -164,7 +154,7 @@
 			);
 			name = Utilities;
 			packageProductDependencies = (
-				AB9E91D72763F73900C02821 /* JFUtils */,
+				ABAD7032276630BC00F49854 /* JFUtils */,
 			);
 			productName = JFUtils;
 			productReference = AB80F3382763899600139D9B /* Utilities.app */;
@@ -194,6 +184,9 @@
 				Base,
 			);
 			mainGroup = AB80F32F2763899600139D9B;
+			packageReferences = (
+				ABAD7031276630BC00F49854 /* XCRemoteSwiftPackageReference "JFUtils" */,
+			);
 			productRefGroup = AB80F3392763899600139D9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -381,7 +374,7 @@
 				PRODUCT_NAME = Utilities;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -410,7 +403,7 @@
 				PRODUCT_NAME = Utilities;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -437,9 +430,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		ABAD7031276630BC00F49854 /* XCRemoteSwiftPackageReference "JFUtils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iComputerfreak/JFUtils";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		AB9E91D72763F73900C02821 /* JFUtils */ = {
+		ABAD7032276630BC00F49854 /* JFUtils */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = ABAD7031276630BC00F49854 /* XCRemoteSwiftPackageReference "JFUtils" */;
 			productName = JFUtils;
 		};
 /* End XCSwiftPackageProductDependency section */

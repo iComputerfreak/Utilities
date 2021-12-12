@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "JFUtils",
+        "repositoryURL": "https://github.com/iComputerfreak/JFUtils",
+        "state": {
+          "branch": "main",
+          "revision": "c4a742534a26852f7989b112a2c28b3fdf66cad4",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
